@@ -2,6 +2,7 @@ package fr.triozer.aoc2022.days
 
 import fr.triozer.aoc2022.utils.readInput
 
+// #region part1
 private fun part1(input: List<String>): Int = input.sumOf {
     val (first, second) = it.chunked(it.length / 2)
     val item = first.filter { c -> second.contains(c) }[0]
@@ -12,7 +13,9 @@ private fun part1(input: List<String>): Int = input.sumOf {
         item.code - 'a'.code + 1
     }
 }
+// #endregion part1
 
+// #region part2
 private fun part2(input: List<String>) = input.windowed(3, 3).sumOf {
     val (first, second, third) = it
     val badge = first.filter { c -> second.contains(c) && third.contains(c) }[0]
@@ -23,6 +26,7 @@ private fun part2(input: List<String>) = input.windowed(3, 3).sumOf {
         badge.code - 'a'.code + 1
     }
 }
+// #endregion part2
 
 private fun main() {
     val testInput = readInput(3, "test")

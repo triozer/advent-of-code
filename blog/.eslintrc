@@ -1,9 +1,0 @@
-{
-  "extends": "@antfu",
-  "rules": {
-    "quotes": [
-      "error",
-      "double"
-    ]
-  }
-}

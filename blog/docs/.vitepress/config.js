@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress"
 
 export default defineConfig({
-  title: "AOC 2022",
-  description: "triozer's Advent of Code 2022 blog",
+  title: "AOC",
+  description: "triozer's Advent of Code blog",
   lastUpdated: true,
   themeConfig: {
     socialLinks: [
@@ -20,12 +20,24 @@ export default defineConfig({
       link: "/",
     }],
     sidebar: [{
-      text: "Days",
+      text: "2022",
       items: [
-        { text: "Day 01", link: "/day-01" },
-        { text: "Day 02", link: "/day-02" },
-        { text: "Day 03", link: "/day-03" },
-        { text: "Day 04", link: "/day-04" },
+        {
+          text: "Day 01",
+          link: "/day-01",
+        },
+        {
+          text: "Day 02",
+          link: "/day-02",
+        },
+        {
+          text: "Day 03",
+          link: "/day-03",
+        },
+        {
+          text: "Day 04",
+          link: "/day-04",
+        },
       ],
     }],
   },
