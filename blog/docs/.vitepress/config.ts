@@ -23,6 +23,7 @@ export default defineConfig({
       text: "Days",
       items: [
         { text: "Day 01", link: "/day-01" },
+        { text: "Day 02", link: "/day-02" },
       ],
     }],
   },
