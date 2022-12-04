@@ -5,6 +5,13 @@
 > Every day from December 1st to December 25th, a new puzzle is released on the official website. The puzzles vary in
 > difficulty and are designed to test your coding skills.
 
+### Join the challenge with me
+
+If you want to join the challenge with me, you can find the puzzles on the official
+website: [https://adventofcode.com/](https://adventofcode.com/).
+
+You can also join my private leaderboard `1663489-c3aa9b4d` by going https://adventofcode.com/2022/leaderboard/private.
+
 ## Project structure
 
 The project is structured as follows:
@@ -40,7 +47,8 @@ _PS: I'll try to write a blog post for each day, but I can't guarantee it... :sm
 
 ## How to generate the files for a new day?
 
-To generate the files for a new day, you can use the [`new-day`](scripts/new-day) script. It will create all the needed files.
+To generate the files for a new day, you can use the [`new-day`](scripts/new-day) script. It will create all the needed
+files.
 
 Example:
 
