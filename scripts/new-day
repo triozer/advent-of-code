@@ -43,7 +43,7 @@ private fun main() {
 
     println("Checks passed ✅")
 
-    val input = readInput(1, "input")
+    val input = readInput($day, "input")
     println(part1(input))
     println(part2(input))
 }
