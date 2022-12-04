@@ -22,9 +22,17 @@ fi
 
 # Then it create a file "day-$1.md" in the directory "blog/docs/"
 cat <<EOF > blog/docs/day-"$padded_day".md
-# Day $padded_day
+# [Day $padded_day](https://adventofcode.com/2022/day/$day)
 
 ## Introduction
+
+Explain briefly the challenge here.
+
+### Input
+
+<<< @/../../solutions/src/main/resources/day1/test.in{txt}
+
+### Other
 
 <<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day$padded_day.kt#other{kotlin}
 
@@ -38,6 +46,9 @@ cat <<EOF > blog/docs/day-"$padded_day".md
 
 ## Conclusion
 
+Lorem impsun dolor sit amet.
+
+Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
 code: [Day$padded_day.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day$padded_day.kt)
 EOF

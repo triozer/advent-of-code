@@ -26,7 +26,7 @@ export default defineConfig({
       // collapsed: true,
       items: [
         {
-          text: "Day 01",
+          text: "Day 01: Calorie Counting",
           link: "/day-01",
         },
         {
