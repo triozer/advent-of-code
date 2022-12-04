@@ -1,4 +1,11 @@
-.gradle
+# common
 .idea
+
+# blog
+dist
+node_modules
+
+# solutions
+.gradle
 build
-src/**/*.txt
+src/**/input.txt
