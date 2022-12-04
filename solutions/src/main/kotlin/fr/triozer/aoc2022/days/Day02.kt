@@ -15,6 +15,7 @@ private enum class Action(val value: Int) {
         }
     }
 
+    // #region added-for-part-2
     fun beats() = when (this) {
         ROCK -> SCISSORS
         PAPER -> ROCK
@@ -26,6 +27,7 @@ private enum class Action(val value: Int) {
         PAPER -> SCISSORS
         SCISSORS -> ROCK
     }
+    // #endregion added-for-part-2
 
     fun compare(other: Action): Int = when {
         this == other -> 3
@@ -48,6 +50,8 @@ private fun part1(input: List<String>) = input.fold(0) { acc, round ->
 private fun part2(input: List<String>) = input.fold(0) { acc, round ->
     val (p1, goal) = round.split(" ")
     val player1 = Action.from(p1)
+
+    // We define the action based on the goal
     val player2 = when (goal) {
         "X" -> player1.beats()
         "Y" -> player1

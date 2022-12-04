@@ -30,7 +30,7 @@ export default defineConfig({
           link: "/day-01",
         },
         {
-          text: "Day 02",
+          text: "Day 02: Rock Paper Scissors",
           link: "/day-02",
         },
         {
