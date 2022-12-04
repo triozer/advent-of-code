@@ -30,11 +30,13 @@ Explain briefly the challenge here.
 
 ### Input
 
-<<< @/../../solutions/src/main/resources/day1/test.in{txt}
+<<< @/../../solutions/src/main/resources/day$day/test.in{txt}
 
 ### Other
 
+::: details Click to view other
 <<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day$padded_day.kt#other{kotlin}
+:::
 
 ## Part 1
 
@@ -48,7 +50,7 @@ Explain briefly the challenge here.
 
 Lorem impsun dolor sit amet.
 
-Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\
+Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\\
 Source
 code: [Day$padded_day.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day$padded_day.kt)
 EOF
