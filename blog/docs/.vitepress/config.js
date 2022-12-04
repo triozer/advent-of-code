@@ -4,6 +4,7 @@ export default defineConfig({
   title: "AOC",
   description: "triozer's Advent of Code blog",
   lastUpdated: true,
+  cleanUrls: "without-subfolders",
   themeConfig: {
     socialLinks: [
       {
@@ -21,6 +22,8 @@ export default defineConfig({
     }],
     sidebar: [{
       text: "2022",
+      // collapsible: true,
+      // collapsed: true,
       items: [
         {
           text: "Day 01",
