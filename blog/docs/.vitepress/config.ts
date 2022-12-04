@@ -1,6 +1,9 @@
-export default {
+import { defineConfig } from "vitepress"
+
+export default defineConfig({
   title: "AOC 2022",
   description: "triozer's Advent of Code 2022 blog",
+  lastUpdated: true,
   themeConfig: {
     socialLinks: [
       {
@@ -23,5 +26,4 @@ export default {
       ],
     }],
   },
-}
-
+})
