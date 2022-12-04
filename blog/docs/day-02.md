@@ -8,4 +8,5 @@
 
 ## Conclusion
 
-Source code: [Day02.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day02.kt)
+Source
+code: [Day02.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day02.kt)
