@@ -48,7 +48,7 @@ Moving a subset of the reversed queue is the same as moving the whole queue.
 
 ## Conclusion
 
-This one was a bit trickier due to the parsing of the instructions. Once the parsing done, it was easy to relay
+This one was a bit trickier due to the parsing of the instructions. Once the parsing done, it was easy to rely
 on [`ArrayDeque`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-deque/) as the data structure
 for the container.
 
