@@ -41,6 +41,10 @@ export default defineConfig({
           text: "Day 04: Camp Cleanup",
           link: "/day-04",
         },
+        {
+          text: "Day 05: Supply Stacks",
+          link: "/day-05",
+        },
       ],
     }],
   },
