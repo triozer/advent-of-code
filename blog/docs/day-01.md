@@ -35,3 +35,24 @@ Pretty simple day, I didn't have to think too much about it. I'm looking forward
 Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
 code: [Day01.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day01.kt)
+
+### Other solution
+
+::: details After some time, I found this another way to solve the problem
+
+```kotlin
+private fun main() {
+    val testInput = readInput(1, "test")
+    val elfCalories = testInput
+        .chunkedBy { it.isBlank() } // Use blank lines to separate inventories
+        .map { carriedCalories ->
+            carriedCalories.sumOf { it.toInt() }
+        }
+        .sortedDescending()
+
+    check(elfCalories.first() == 24000)
+    check(elfCalories.take(3).sum() == 45000) // take(3) is equivalent to subList(0, 3)
+}
+```
+
+:::
