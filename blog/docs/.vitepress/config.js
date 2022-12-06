@@ -46,7 +46,7 @@ export default defineConfig({
           link: "/day-05",
         },
         {
-          text: "Day 06",
+          text: "Day 06: Tuning Trouble",
           link: "/day-06",
         },
       ],
