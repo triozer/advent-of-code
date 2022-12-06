@@ -44,7 +44,7 @@ Explain briefly the challenge here.
 
 ## Part 2
 
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day$padded_day.kt#part1{kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day$padded_day.kt#part2{kotlin}
 
 ## Conclusion
 
