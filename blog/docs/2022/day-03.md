@@ -59,4 +59,4 @@ You just need to get your calculations right 🥹.
 
 Difficulty:️ ⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day03.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day03.kt)
+code: [Day03.kt](https://github.com/triozer/aoc-2022/blob/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day03.kt)

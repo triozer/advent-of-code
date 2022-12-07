@@ -56,4 +56,4 @@ expected.
 
 Difficulty:️ ⭐️⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day02.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day02.kt)
+code: [Day02.kt](https://github.com/triozer/aoc-2022/blob/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day02.kt)

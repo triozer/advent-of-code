@@ -38,4 +38,4 @@ use [`IntRange`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.ranges/-int
 
 Difficulty:️ ⭐️⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day04.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day04.kt)
+code: [Day04.kt](https://github.com/triozer/aoc-2022/blob/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day04.kt)

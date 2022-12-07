@@ -34,4 +34,4 @@ started too late anyway), maybe next year? 😁
 
 Difficulty: ⭐️⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day07.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day07.kt)
+code: [Day07.kt](https://github.com/triozer/aoc-2022/blob/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day07.kt)

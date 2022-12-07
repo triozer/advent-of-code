@@ -64,7 +64,7 @@ Lorem impsun dolor sit amet.
 
 Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\\
 Source
-code: [Day$padded_day.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$padded_day.kt)
+code: [Day$padded_day.kt](https://github.com/triozer/aoc-2022/blob/main/solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$padded_day.kt)
 EOF
 echo "Created article post: blog/docs/$year/day-$padded_day.md"
 

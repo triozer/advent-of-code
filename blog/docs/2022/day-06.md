@@ -23,4 +23,4 @@ Pretty easy. Nothing much to add, I think the code is self-explanatory.
 
 Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day06.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day06.kt)
+code: [Day06.kt](https://github.com/triozer/aoc-2022/blob/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day06.kt)

@@ -34,7 +34,7 @@ Pretty simple day, I didn't have to think too much about it. I'm looking forward
 
 Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day01.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day01.kt)
+code: [Day01.kt](https://github.com/triozer/aoc-2022/blob/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day01.kt)
 
 ### Other solution
 

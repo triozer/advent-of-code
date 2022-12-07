@@ -54,4 +54,4 @@ for the container.
 
 Difficulty: ⭐️⭐️⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day05.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day05.kt)
+code: [Day05.kt](https://github.com/triozer/aoc-2022/blob/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day05.kt)
