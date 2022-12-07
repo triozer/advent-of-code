@@ -10,7 +10,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/triozer/aoc-2022",
+        link: "https://github.com/triozer/advent-of-code",
       },
       {
         icon: "twitter",
