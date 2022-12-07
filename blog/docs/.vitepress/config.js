@@ -49,6 +49,10 @@ export default defineConfig({
           text: "Day 06: Tuning Trouble",
           link: "/day-06",
         },
+        {
+          text: "Day 07: No Space Left On Device",
+          link: "/day-07",
+        },
       ],
     }],
   },
