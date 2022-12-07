@@ -1,6 +1,6 @@
-# [aoc-2022](https://aoc.triozer.fr)
+# [aoc](https://aoc.triozer.fr)
 
-> Advent of Code 2022 is a yearly event that brings together computer programmers and enthusiasts from all over the
+> Advent of Code is a yearly event that brings together computer programmers and enthusiasts from all over the
 > world.
 > Every day from December 1st to December 25th, a new puzzle is released on the official website. The puzzles vary in
 > difficulty and are designed to test your coding skills.
@@ -25,11 +25,11 @@ The project is structured as follows:
 The solutions are written in Kotlin and are located in the `solutions` directory. The source code is split into two
 packages:
 
-- [`fr.triozer.aoc/y2022.days`](solutions/src/main/kotlin/fr/triozer/aoc/y2022/days): contains the source code for each day.
-- [`fr.triozer.aoc.utils`](solutions/src/main/kotlin/fr/triozer/aoc/y2022/utils): contains the source code for the
+- [`fr.triozer.aoc.y2022`](solutions/src/main/kotlin/fr/triozer/aoc/y2022): contains the source code for each day.
+- [`fr.triozer.aoc.utils`](solutions/src/main/kotlin/fr/triozer/aoc/utils): contains the source code for the
   utilities used by the solutions.
 
-You can also find the resources used in the [`src/main/resources`](solutions/src/main/resources) directory. Each day has
+You can also find the resources used in the [`src/main/resources`](solutions/src/main/resources/2022) directory. Each day has
 its own directory and are composed of the following files:
 
 - `input.in`: my (can different from yours) input file provided for the day.
@@ -47,13 +47,13 @@ _PS: I'll try to write a blog post for each day, but I can't guarantee it... :sm
 
 ## How to generate the files for a new day?
 
-To generate the files for a new day, you can use the [`new-day`](scripts/new-day) script. It will create all the needed
+To generate the files for a new day, you can use the [`generate`](scripts/generate) script. It will create all the needed
 files.
 
 Example:
 
 ```shell
-chmod +x scripts/new-day
+chmod +x scripts/generate
 
-./scripts/new-day 3
+./scripts/new-day 2022 25
 ```
