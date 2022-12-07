@@ -19,17 +19,17 @@ We have to calculate the **total count** based on the following:
 
 ### Input
 
-<<< @/../../solutions/src/main/resources/day2/test.in{txt}
+<<< @/../../solutions/src/main/resources/2022/day2/test.in{txt}
 
 ### Other
 
 ::: details Click to view Action enum
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day02.kt#other{kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day02.kt#other{kotlin}
 :::
 
 ## Part 1
 
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day02.kt#part1{kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day02.kt#part1{kotlin}
 
 ## Part 2
 
@@ -41,13 +41,13 @@ Now, the second column now decides the winner.
 - `Z` you need to win
 :::
 
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day02.kt#added-for-part-2{kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day02.kt#added-for-part-2{kotlin}
 
 I added two new methods to the `Action` enum:
   - `beats`: returns the Action that can beat the current one
   - `beaten`: returns the Action that can be beaten by the current one
 
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day02.kt#part2{kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day02.kt#part2{kotlin}
 
 ## Conclusion
 
@@ -56,4 +56,4 @@ expected.
 
 Difficulty:️ ⭐️⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day02.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day02.kt)
+code: [Day02.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day02.kt)

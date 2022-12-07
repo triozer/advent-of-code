@@ -1,0 +1,110 @@
+#!/bin/sh
+
+# This script is used to generate files for a new Advent of Code day.
+
+# Require a year number and day number as an argument.
+if [ $# -ne 2 ]; then
+    echo "Usage: $0 <year> <day>"
+    exit 1
+fi
+
+# It takes two arguments, the year number and the day number.
+year=$1
+day=$2
+
+# pad day number with leading zero
+padded_day=$(printf "%02d" "$day")
+
+# It creates the folder "solutions/src/main/kotlin/fr/triozer/aoc/y$year" if it doesn't exist.
+mkdir -p "solutions/src/main/kotlin/fr/triozer/aoc/y$year"
+
+# If the file "solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$1.kt" already exists return an error
+if [ -f "solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$padded_day.kt" ]; then
+    echo "Error: $year Day $padded_day already exists"
+    exit 1
+fi
+
+# Then it creates the blog folder is it doesn't exist.
+mkdir -p "blog/docs/$year"
+
+# Then it touch the file "blog/docs/$year/index.md" if it doesn't exist.
+if [ ! -f "blog/docs/$year/index.md" ]; then
+    touch "blog/docs/$year/index.md"
+fi
+
+# Then it create a file "day-$1.md" in the directory "blog/docs/"
+cat <<EOF > blog/docs/"$year"/day-"$padded_day".md
+# [Day $padded_day](https://adventofcode.com/$year/day/$day)
+
+## Introduction
+
+Explain briefly the challenge here.
+
+### Input
+
+<<< @/../../solutions/src/main/resources/$year/day$day/test.in{txt}
+
+### Other
+
+::: details Click to view other
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$padded_day.kt#other{kotlin}
+:::
+
+## Part 1
+
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$padded_day.kt#part1{kotlin}
+
+## Part 2
+
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$padded_day.kt#part2{kotlin}
+
+## Conclusion
+
+Lorem impsun dolor sit amet.
+
+Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\\
+Source
+code: [Day$padded_day.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$padded_day.kt)
+EOF
+echo "Created article post: blog/docs/$year/day-$padded_day.md"
+
+# Then it creates a file "Day$1.kt" in the directory "solutions/src/main/kotlin/fr/triozer/aoc/y$year"
+cat <<EOF > solutions/src/main/kotlin/fr/triozer/aoc/y"$year"/Day"$padded_day".kt
+package fr.triozer.aoc.y$year
+
+import fr.triozer.aoc.utils.readInput
+
+// #region other
+// #endregion other
+
+// #region part1
+private fun part1(input: List<String>) = 0
+// #endregion part1
+
+// #region part2
+private fun part2(input: List<String>) = 0
+// #endregion part2
+
+private fun main() {
+    val testInput = readInput($year, $day, "test")
+    check(part1(testInput) == 0)
+    check(part2(testInput) == 0)
+
+    println("Checks passed ✅")
+
+    val input = readInput($year, $day, "input")
+    println(part1(input))
+    println(part2(input))
+}
+EOF
+echo "Created solution file: solutions/src/main/kotlin/fr/triozer/aoc/y$year/Day$padded_day.kt"
+
+# And it creates two files "input.in" and "test.in" in the directory "solutions/src/resources/$year/day$1"
+mkdir -p solutions/src/main/resources/"$year"/day"$day"
+touch solutions/src/main/resources/"$year"/day"$day"/input.in
+echo "Created input file: solutions/src/main/resources/$year/day$day/input.in"
+touch solutions/src/main/resources/"$year"/day"$day"/test.in
+echo "Created test file: solutions/src/main/resources/$year/day$day/test.in"
+
+# Touch the blog config file to trigger a rebuild in dev
+touch blog/docs/.vitepress/config.js

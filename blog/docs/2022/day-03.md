@@ -19,11 +19,11 @@ We have to get the common item in a rucksack.
 
 ### Input
 
-<<< @/../../solutions/src/main/resources/day3/test.in{txt}
+<<< @/../../solutions/src/main/resources/2022/day3/test.in{txt}
 
 ## Part 1
 
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day03.kt#part1{2 kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day03.kt#part1{2 kotlin}
 
 [`chunked`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/chunked.html) will split each line into two
 parts of the given size. The output will looks like:
@@ -41,7 +41,7 @@ parts of the given size. The output will looks like:
 
 Now we need to look at group of ruckstacks and find the common badge.
 
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day03.kt#part2{1 kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day03.kt#part2{1 kotlin}
 
 [`windowed`](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/windowed.html) will group each line into a
 list of 3. The output will looks like:
@@ -59,4 +59,4 @@ You just need to get your calculations right 🥹.
 
 Difficulty:️ ⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day03.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day03.kt)
+code: [Day03.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day03.kt)

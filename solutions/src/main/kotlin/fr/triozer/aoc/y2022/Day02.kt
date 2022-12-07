@@ -1,6 +1,6 @@
-package fr.triozer.aoc2022.days
+package fr.triozer.aoc.y2022
 
-import fr.triozer.aoc2022.utils.readInput
+import fr.triozer.aoc.utils.readInput
 
 // #region other
 private enum class Action(val value: Int) {
@@ -41,7 +41,7 @@ private enum class Action(val value: Int) {
 
 // #region part1
 private fun part1(input: List<String>) = input.fold(0) { acc, round ->
-    val (player1, player2) = round.split(" ").map(Action::from)
+    val (player1, player2) = round.split(" ").map(Action.Companion::from)
     acc + player2.value + player2.compare(player1)
 }
 // #endregion part1
@@ -63,13 +63,13 @@ private fun part2(input: List<String>) = input.fold(0) { acc, round ->
 // #endregion part2
 
 private fun main() {
-    val testInput = readInput(2, "test")
+    val testInput = readInput(2022, 2, "test")
     check(part1(testInput) == 15)
     check(part2(testInput) == 12)
 
     println("Checks passed ✅")
 
-    val input = readInput(2, "input")
+    val input = readInput(2022, 2, "input")
     println(part1(input))
     println(part2(input))
 }

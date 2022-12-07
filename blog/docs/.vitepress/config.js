@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress"
+import { generateSidebars } from "./sidebars"
 
 export default defineConfig({
   title: "AOC",
@@ -20,40 +21,6 @@ export default defineConfig({
       text: "Home",
       link: "/",
     }],
-    sidebar: [{
-      text: "2022",
-      // collapsible: true,
-      // collapsed: true,
-      items: [
-        {
-          text: "Day 01: Calorie Counting",
-          link: "/day-01",
-        },
-        {
-          text: "Day 02: Rock Paper Scissors",
-          link: "/day-02",
-        },
-        {
-          text: "Day 03: Rucksack Reorganization",
-          link: "/day-03",
-        },
-        {
-          text: "Day 04: Camp Cleanup",
-          link: "/day-04",
-        },
-        {
-          text: "Day 05: Supply Stacks",
-          link: "/day-05",
-        },
-        {
-          text: "Day 06: Tuning Trouble",
-          link: "/day-06",
-        },
-        {
-          text: "Day 07: No Space Left On Device",
-          link: "/day-07",
-        },
-      ],
-    }],
+    sidebar: generateSidebars(),
   },
 })

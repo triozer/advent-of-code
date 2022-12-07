@@ -6,11 +6,11 @@ Inventories are separated by a line break. They must therefore be grouped, trans
 
 ### Input
 
-<<< @/../../solutions/src/main/resources/day1/test.in{txt}
+<<< @/../../solutions/src/main/resources/2022/day1/test.in{txt}
 
 ## Part 1
 
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day01.kt#part1{2-3 kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day01.kt#part1{2-3 kotlin}
 
 The highlighted lines transforms the input into:
 
@@ -26,7 +26,7 @@ After the first step it's pretty simple to sum the values.
 
 ## Part 2
 
-<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day01.kt#part2{kotlin}
+<<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day01.kt#part2{kotlin}
 
 ## Conclusion
 
@@ -34,7 +34,7 @@ Pretty simple day, I didn't have to think too much about it. I'm looking forward
 
 Difficulty: ⭐️ / ⭐️⭐️⭐️⭐️⭐️\
 Source
-code: [Day01.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc2022/days/Day01.kt)
+code: [Day01.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day01.kt)
 
 ### Other solution
 
@@ -42,7 +42,7 @@ code: [Day01.kt](https://github.com/triozer/aoc-2022/tree/main/solutions/src/mai
 
 ```kotlin
 private fun main() {
-    val testInput = readInput(1, "test")
+    val testInput = readInput(2022, 1, "test")
     val elfCalories = testInput
         .chunkedBy { it.isBlank() } // Use blank lines to separate inventories
         .map { carriedCalories ->

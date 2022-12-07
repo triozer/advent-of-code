@@ -25,8 +25,8 @@ The project is structured as follows:
 The solutions are written in Kotlin and are located in the `solutions` directory. The source code is split into two
 packages:
 
-- [`fr.triozer.aoc2022.days`](solutions/src/main/kotlin/fr/triozer/aoc2022/days): contains the source code for each day.
-- [`fr.triozer.aoc2022.utils`](solutions/src/main/kotlin/fr/triozer/aoc2022/utils): contains the source code for the
+- [`fr.triozer.aoc/y2022.days`](solutions/src/main/kotlin/fr/triozer/aoc/y2022/days): contains the source code for each day.
+- [`fr.triozer.aoc.utils`](solutions/src/main/kotlin/fr/triozer/aoc/y2022/utils): contains the source code for the
   utilities used by the solutions.
 
 You can also find the resources used in the [`src/main/resources`](solutions/src/main/resources) directory. Each day has

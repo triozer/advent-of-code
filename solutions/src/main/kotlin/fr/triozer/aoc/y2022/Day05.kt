@@ -1,6 +1,6 @@
-package fr.triozer.aoc2022.days
+package fr.triozer.aoc.y2022
 
-import fr.triozer.aoc2022.utils.readInput
+import fr.triozer.aoc.utils.readInput
 
 // #region other-container
 private class Container {
@@ -97,13 +97,13 @@ private fun part2(input: List<String>): String {
 // #endregion part2
 
 private fun main() {
-    val testInput = readInput(5, "test")
+    val testInput = readInput(2022, 5, "test")
     check(part1(testInput) == "CMZ")
     check(part2(testInput) == "MCD")
 
     println("Checks passed ✅")
 
-    val input = readInput(5, "input")
+    val input = readInput(2022, 5, "input")
     println(part1(input))
     println(part2(input))
 }

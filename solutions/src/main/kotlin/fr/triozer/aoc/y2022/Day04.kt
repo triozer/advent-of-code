@@ -1,6 +1,6 @@
-package fr.triozer.aoc2022.days
+package fr.triozer.aoc.y2022
 
-import fr.triozer.aoc2022.utils.readInput
+import fr.triozer.aoc.utils.readInput
 
 // #region part1
 private fun part1(input: List<String>) = input.count {
@@ -29,13 +29,13 @@ private fun part2(input: List<String>) = input.count {
 // #endregion part2
 
 private fun main() {
-    val testInput = readInput(4, "test")
+    val testInput = readInput(2022, 4, "test")
     check(part1(testInput) == 2)
     check(part2(testInput) == 4)
 
     println("Checks passed ✅")
 
-    val input = readInput(4, "input")
+    val input = readInput(2022, 4, "input")
     println(part1(input))
     println(part2(input))
 }

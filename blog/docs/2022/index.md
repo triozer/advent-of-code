@@ -1,6 +1,7 @@
 # Introduction
 
-Hello and welcome to my Advent of Code dedicated blog!
+December 1st 2022, signed the return of Advent of Code. This year, I will try to solve the puzzles and keep this blog
+up-to-date.
 
 All my solutions will be available on the GitHub repo.
 

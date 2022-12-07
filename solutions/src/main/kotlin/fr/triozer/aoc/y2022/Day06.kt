@@ -1,6 +1,6 @@
-package fr.triozer.aoc2022.days
+package fr.triozer.aoc.y2022
 
-import fr.triozer.aoc2022.utils.readInput
+import fr.triozer.aoc.utils.readInput
 
 // #region part1
 private fun part1(input: List<String>) = input.map { line ->
@@ -19,13 +19,13 @@ private fun part2(input: List<String>) = input.map { line ->
 // #endregion part2
 
 private fun main() {
-    val testInput = readInput(6, "test")
+    val testInput = readInput(2022, 6, "test")
     check(part1(testInput) == listOf(7, 5, 6, 10, 11))
     check(part2(testInput) == listOf(19, 23, 23, 29, 26))
 
     println("Checks passed ✅")
 
-    val input = readInput(6, "input")
+    val input = readInput(2022, 6, "input")
     println(part1(input))
     println(part2(input))
 }
