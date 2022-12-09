@@ -22,11 +22,11 @@ We were provided with another test input, for the part 2.
 <<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day09.kt#other-type{kotlin}
 :::
 
-::: details Click to view parse(input: List<String>)
+::: details Click to view parse(input: List\<String\>)
 <<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day09.kt#other-parse-input{kotlin}
 :::
 
-::: details Click to view Sequence<IntPair>.follow()
+::: details Click to view Sequence\<IntPair>.follow()
 <<< @/../../solutions/src/main/kotlin/fr/triozer/aoc/y2022/Day09.kt#other-follow{kotlin}
 :::
 
